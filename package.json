@@ -1,0 +1,43 @@
+{
+  "name": "yantu-evidence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx server/index.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "doctor": "node scripts/doctor.mjs",
+    "verify:api": "tsx scripts/check-api.ts",
+    "verify:ui": "node scripts/check-depth-ui.mjs"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "lucide-react": "1.65.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "undici": "8.12.3",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "playwright": "1.64.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "description": "研途有据：基于元宝搜索的考研择校与信息核验工作台",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hyone-soul/yantu-evidence.git"
+  }
+}
